@@ -1,0 +1,146 @@
+// Sign in Screen (Azure B2C)
+
+.sidePanel {
+    background: #ebebeb;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+.signin {
+    ul {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+        @media (min-width: 576px) {
+            font-size: 1.125rem;
+        }
+    }
+    li.checklist {
+       list-style: none;
+    }
+}
+
+.checklist {
+    padding-bottom: 1rem;
+    &:before {
+        content: " ";
+        height: 18px;
+        width: 9px;
+        border: solid #e5b13d;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        left: 1.25rem;
+    }
+}
+
+// Overrides the Azure B2C default styling
+
+// Signin screen
+#api {
+    .localAccount .intro h2 {
+        height: 62px;
+        overflow: hidden;
+        color: transparent;
+        &:before {
+            content: "Sign in:\A";
+            white-space: pre;
+            color: #474747; 
+        }
+    }
+    label {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #7d7d7d;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    input {
+        margin-bottom: 1.5rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #c4c4c4;
+    }
+    .password-label {
+        display:-webkit-flex;
+        display:flex;
+        justify-content:flex-start;
+        a {
+            margin-left: auto;
+            font-size: 14px;
+            // text-decoration: underline;
+            font-weight: 300;
+        }
+    }
+    .buttons {
+        button {
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: 2px solid;
+            margin-bottom: 2rem;
+        }
+        #next {
+            border: 2px solid #254f90;
+            background-color: #4569a0;
+            color: white;
+            width: 100%;
+            &:hover {
+                background-color: #254f90;
+                border: 2px solid #18335c;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+            }
+            &:active {
+                background-color: #18335c;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .divider {
+        h2 {
+            display: none;
+        }
+    }
+    .create {
+        p {
+            color: #707070;
+            font-weight: 300;
+            a {
+                padding-left: 6px;
+            }
+        }
+    }
+}
+
+// Register screen
+#api {
+    .attr {
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+// Error messages
+#api {
+    .error {
+        color: #E22C2A;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .itemLevel {
+        line-height: 1;
+        position: relative;
+        bottom: -5px;
+    }
+}

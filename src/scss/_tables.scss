@@ -1,0 +1,111 @@
+@import './variables';
+// TAbles
+.table {
+  border-top: 0;
+  thead {
+    tr {
+      background-color: #d8dce0;
+      border-bottom: 1px solid #BFC6CC;
+    }
+    th {
+      font-size: 12px;
+      font-weight: bold;
+      color: #767676;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+  tbody {
+    font-size: 14px;
+    color: $matteText;
+  }
+  td {
+    padding: 0;
+    vertical-align: middle;
+    line-height: 2rem;
+    border-bottom: 1px solid white;
+    border-top: 0;
+  }
+  .table-row {
+    td {
+      padding: 1rem 0.75rem;
+    }
+  }
+  .fieldReference {
+    font-weight: 100;
+  }
+  .errorMsg {
+    color: $redInteractive;
+  }
+  .warningMsg {
+    color: $warning;
+  }
+  .details-row {
+    &:hover {
+      background-color: white;
+    }
+    td {
+      padding: 0;
+    }
+    .errorDesc {
+      padding: 12px 0px;
+      border-bottom: 1px solid $superLightGrey;
+    }
+  }
+  .projectName {
+    font-weight: 600;
+  }
+  .errorLink {
+    background: $redInteractive;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+    margin-right: 6px;
+    &:hover {
+      -webkit-box-shadow: 2px 3px 5px -1px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 2px 3px 5px -1px rgba(50, 50, 50, 0.75);
+      box-shadow: 2px 3px 5px -1px rgba(50, 50, 50, 0.75);
+      text-decoration: none;
+    }
+  }
+  .expand-cell {
+    text-align: right;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+      img.chevron {
+        transition: .3s transform ease-in-out;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+  tr.collapsed .chevron {
+    transform: rotate(90deg);
+  }
+  //   .warningLink {
+  //     color: $warning;
+  //     &:hover {
+  //       text-decoration: underline;
+  //     }
+  //   }
+  tr {
+    border: 0;
+    background-color: white;
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+    &.core {
+      background-color: #f0f0f0;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.alert {
+    background-color: white;
+    color: $matteText;
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: solid 5px $primary;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding: 1.250rem;
+    p {
+        margin: 0;
+    }
+}
+.alert-info {
+    color: $infoAlert;
+    border-left-color: $bluePrimary;
+    background-image: url('../public/images/icon-info.svg');
+    background-position: 1.250rem center;
+    background-size: 28px;
+    padding-left: 4.5rem;
+}
+.alert-success {
+    color: $green;
+    border-left-color: $green;
+    background-image: url('../public/images/icon-success.svg');
+    background-position: 1.250rem center;
+    background-size: 28px;
+    padding-left: 4.5rem;
+}
+.alert-warning {
+    color: $warning;
+    border-left-color: $warning;
+    background-image: url('../public/images/icon-warning.svg');
+    background-position: 1.250rem center;
+    background-size: 28px;
+    padding-left: 4.5rem;
+}
+.alert-danger {
+    color: $red;
+    border-left-color: $red;
+    background-image: url('../public/images/icon-danger.svg');
+    background-position: 1.250rem center;
+    background-size: 28px;
+    padding-left: 4.5rem;
+}
+/*.alert-secondary {
+    border-left-color: $secondary;
+}*/
+.alert-light {
+    border-left-color: $lighterGrey;
+}
+.alert-dark {
+    border-left-color: $darkestGrey;
+    color: black;
+    background-color: $darkGrey;
+}

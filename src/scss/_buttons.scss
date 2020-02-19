@@ -1,0 +1,204 @@
+@import './variables';
+
+.btn {
+    color: $primaryInteractive;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    &:hover {
+        color: $primary;
+    }
+    &:focus {
+        outline: 2px solid #9cccfd;
+        outline-offset: 2px;
+    }
+    @media (min-width: 576px) {
+        margin-bottom: 0;
+    }
+}
+
+.btn-default {
+    border: 2px solid $primary;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        background-color: $navy;
+        border-color: $navy;
+        color: white;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.btn-primary {
+    border: 2px solid $primary;
+    background-color: $primaryInteractive;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 5px;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        background-color: $navy;
+        border-color: $navy;
+        color: white;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.tertiaryBtn {
+    color: $primaryInteractive;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.125em solid $tertiaryBtnUnderline; 
+    padding: 0;
+
+    &:hover, &:focus {
+        color: $primary;
+        border-bottom: 0.125em solid $primaryInteractive;
+        filter: drop-shadow(0 0.15em 0.5em $grey);
+    }
+    &:active {
+        color: $navy;
+        border-bottom: 0.125em solid $navy;
+        filter: drop-shadow(0 0.15em 0.5em $darkGrey);
+    }
+
+    &.withIcon {
+        margin-left: 1rem;
+        &:hover, &:focus {
+            filter: none;
+        }
+        &:active {
+            filter: none;
+        }
+    }
+}
+
+i {
+    content: '';
+    display: inline-block;
+    width: 1.250rem;
+    height: 1.250rem;
+    position: absolute;
+    left: 0.250em;
+    bottom: 0.125em;
+    &.search {
+        background: url('../public/images/icon-search.svg') no-repeat;
+    }
+    &.minus {
+        background: url('../public/images/icon-minus.svg') no-repeat;
+    }
+    &.addOne {
+        background: url('../public/images/icon-plus.svg') no-repeat;
+    }
+}
+
+.delete {
+    color: $red;
+    border-bottom: 0.125em solid $redInteractive; 
+
+    &:hover, &:focus {
+        color: #C60200;
+        border-bottom: 0.125em solid #C60200;
+        filter: drop-shadow(0 0.15em 0.5em $grey);
+    }
+    &:active {
+        color: #C60200;
+        border-bottom: 0.125em solid #C60200;
+        filter: drop-shadow(0 0.15em 0.5em $darkGrey);
+    }
+}
+
+
+/*    
+&.withIcon {
+    margin-left: 1rem;
+    &:before {
+        content: '';
+        display: inline-block;
+        background: url('../public/images/icon-search.svg') no-repeat;
+        width: 1.250rem;
+        height: 1.250rem;
+        color: $primary;
+        position: absolute;
+        left: 0.250em;
+        bottom: 0.125em;
+    }
+}
+*/
+
+
+.buttonGroup {
+    border-top: 2px solid $buttonGroupBorder;
+    padding: 1.5rem 0 0 0;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: 576px) {
+        display: block;
+
+        .btn-primary {
+            float:right;
+        }
+    }
+}
+
+.addButton {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $primaryInteractive;
+    border: 2px solid $primaryInteractive;
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-height: 52px;
+        height: 100%;
+        min-width: 60px;
+        width: 15%;
+        max-width: 74px;
+        background-color: $primaryInteractive;
+        z-index: 2;
+        background-image: url("../public/images/icon-whiteplus.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.addButton:hover {
+    color: $primary;
+    border: 2px solid $primary;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    &:after {
+        background-color: $primary;
+    }
+}
+
+.addButton:active {
+    border-color: $navy;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    &:after {
+        background-color: $navy;
+    }
+}

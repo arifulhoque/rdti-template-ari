@@ -1,0 +1,59 @@
+@import './variables';
+
+.sidenav {
+    padding-left: 0;
+    padding-inline-start: 0 !important;
+    margin-right: 16px;
+    li {
+        padding: 0;
+        list-style: none;
+        &:hover {
+            background-color: white;
+        }
+        a {
+            color: $matteText;
+            font-size: 14px;
+            // position: relative;
+            // left: 8px;
+            padding: 1rem 1.5rem;
+            display: block;
+            width: 100%;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    a.active {
+        border-left: 3px solid $bluePrimary;
+        background-color: white;
+        font-weight: 700;
+        &:before {
+            content: url('../public/images/icon-blueArrow.png');
+            position: relative;
+            left: -0.5rem;
+            top: 0rem;
+        }
+    }
+    li.inprogress {
+        font-weight: normal;
+        &:before {
+            content: url('../public/images/icon-inprogress.svg');
+            position: relative;
+            left: -7px;
+            top: 3px;
+        }
+    }
+    li.complete {
+        font-weight: normal;
+        &:before {
+            content: url('../public/images/icon-complete.png');
+            position: relative;
+            left: -7px;
+            top: 4px;
+        }
+    }
+    .isDisabled {
+        color: $grey;
+        cursor: not-allowed;
+    }
+}

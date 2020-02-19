@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Components | Joey's RDTI Template</title>
+</head>
+
+<body>
+  <header>
+    <!-- Global header -->
+    <div class="globalRibbon">
+      <div class="headergovau">
+        <div class="headergovau__bar">
+          <!--Remove Govt Header text for MS site-->
+          <a class="headergovau__publisher" href="https://business.gov.au"><img class="bga-mobile-logo"
+              src="public/images/bga-mobile-logo.svg"></a>
+        </div>
+      </div>
+      <div class="serviceHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col text-left">
+              <a href="index.html"><img class="rdti-crest" src="public/images/rdti-logo.svg"></a>
+            </div>
+            <div class="col text-right">
+              <a class="account dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="account-icon" src="public/images/icon-user.svg">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="signin.html">Sign in</a>
+              <a class="dropdown-item" href="register.html">Register</a>
+              <a class="dropdown-item" href="components.html">Components</a>
+              <a class="dropdown-item" href="buttons.html">Buttons</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sign out</a>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Navbar -->
+<!--    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">History</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>-->
+  </header>
+
+  <!-- Begin page content -->
+  <main>
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Side nav -->
+        <div class="col-md-4">
+          <div id="sidenav"></div>
+        </div>
+
+        <div class="col">
+          <h1>Components</h1>
+
+            <div class="mb-5">
+                <Button class="addButton">
+                  Add new project
+                </Button>
+            </div>
+
+          <h2>Form components</h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <!-- Custom select menu (kind of like a dropdown but not a dropdown) -->
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control custom-select" id="customSelectMenu">
+            <option>Select your team</option>
+            <option>Balmain Tigers</option>
+            <option>Sydney Roosters</option>
+            <option>Parramatta Eels</option>
+            <option>North Sydney Bears</option>
+            <option>North Queensland Cowboys</option>
+          </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Example multiple select</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend">AUD $</span>
+              </div>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  .00
+                </span>
+              </div>
+            </div>
+
+            <hr class="bigDivide">
+
+            <!-- Alerts -->
+            <h2>Alerts</h2>
+            <div class="alert alert-info" role="alert" aria-live="polite" aria-labelledby="infoTitle">
+              <p id="infoTitle">
+                <span class="sr-only">Information alert:</span> This is an information alert. Your account email address
+                is <strong>randy@randyscandies.com.au</strong>. This cannot be changed; however, you can provide another
+                email address for us to contact you.
+                <a href="#">
+              Find out more
+            </a>
+              </p>
+            </div>
+
+            <div class="alert alert-success" role="alert" aria-live="polite" aria-labelledby="infoTitle">
+              <p id="infoTitle">
+                <span class="sr-only">Success alert:</span> This is a success alert. Hell yeah! Your details have been updated!
+              </p>
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+              This is a primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              This is a secondary alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              This is a danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              This is a warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              This is a info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              This is a light alert—check it out!
+            </div>
+            <div class="alert alert-dark mb-5" role="alert">
+              This is a dark alert—check it out!
+            </div>
+
+            <hr class="bigDivide">
+
+            <!-- Radio buttons -->
+            <h2>Radio Buttons</h2>
+            <fieldset class="mb-5">
+              <legend class="mb-3">Which radio button do you prefer?</legend>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Very long radio button label. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+              </div>
+
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">No</label>
+              </div>
+            </fieldset>
+
+            <hr class="bigDivide">
+
+            <!-- Accordion (collapse) -->
+            <h2>Accordion with link inside</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <hr class="bigDivide">
+
+            <!-- table panel (borrowed from ux.ato.gov.au)-->
+            <h2>Table Panel</h2>
+            <div class="table-panel">
+              <div class="table-panel-header">
+                <div class="col-xs-12">
+                  <h3>Breakdown of R&D Projects</h3>
+                </div>
+              </div>
+              <table class="adaptive table table-hover">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>
+                      <div class="text-right">Ref no.</div>
+                    </th>
+                    <th>
+                      <div class="text-right">Start and end dates</div>
+                    </th>
+                    <th>
+                      <div class="text-right">Expenditure</div>
+                    </th>
+                    <th>
+                      <div class="text-right">Issues</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-row collapsed project" tabindex="0" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <td data-header="Type">
+                      <div>Project</div>
+                    </td>
+                    <td data-header="Name">
+                      <div class="projectName">Mind-altering ice-cream</div>
+                    </td>
+                    <td data-header="Ref no.">
+                      <div class="text-right">IC3452</div>
+                    </td>
+                    <td data-header="Start and end dates">
+                      <div class="text-right">Mar 19 - Jun 19</div>
+                    </td>
+                    <td data-header="Expenditure">
+                      <div class="text-right">$17,800</div>
+                    </td>
+                    <td data-header="Issues">
+                      <div class="text-right"></div>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row collapsed has-details core" tabindex="0" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <td data-header="Type">
+                      <div>Core</div>
+                    </td>
+                    <td data-header="Name">
+                      <div class="projectName">Experiment One</div>
+                    </td>
+                    <td data-header="Ref no.">
+                      <div class="text-right"></div>
+                    </td>
+                    <td data-header="Start and end dates">
+                      <div class="text-right">Mar 19 - Jun 19</div>
+                    </td>
+                    <td data-header="Expenditure">
+                      <div class="text-right">$5,000</div>
+                    </td>
+                    <td data-header="Issues" class="expand-cell">
+                      <a href="#collapseExample" onclick="return false" class="icon icon-accordion-expand">
+                        <div class="errorLink">3</div>
+                        <img class="chevron" src="public/images/icon-chevrondown-2.svg" alt="expand row">
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr class="details-row">
+                    <td colspan="6">
+                      <div id="collapseExample2" class="collapse">
+                        <div class="collapse-content">
+                          <div class="container-fluid">
+                            <div class="errorDesc row">
+                              <div class="col fieldReference">What was the expenditure for this core activity? <span class="errorMsg">Answer required</span></div>
+                              <div class="col-sm-2">
+                                <a href="#!">
+                                  <div class="view text-right">View</div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="errorDesc row">
+                              <div class="col fieldReference">Describe the core activity <span class="errorMsg">Answer required</span></div>
+                              <div class="col-sm-2">
+                                <a href="#!">
+                                  <div class="view text-right">View</div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="errorDesc row">
+                              <div class="col fieldReference">What new knowledge was this core activity intended to produce? <span class="errorMsg">Answer required</span></div>
+                              <div class="col-sm-2">
+                                <a href="#!">
+                                  <div class="view text-right">View</div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row collapsed has-details core" tabindex="0" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <td data-header="Type">
+                      <div>Core</div>
+                    </td>
+                    <td data-header="Name">
+                      <div class="projectName">Experiment Two</div>
+                    </td>
+                    <td data-header="Ref no.">
+                      <div class="text-right"></div>
+                    </td>
+                    <td data-header="Start and end dates">
+                      <div class="text-right">Mar 19 - Jun 19</div>
+                    </td>
+                    <td data-header="Expenditure">
+                      <div class="text-right">$5,000</div>
+                    </td>
+                    <td data-header="Issues" class="expand-cell">
+                      <a href="#collapseExample" onclick="return false" class="icon icon-accordion-expand">
+                        <div class="errorLink">2</div>
+                        <img class="chevron" src="public/images/icon-chevrondown-2.svg" alt="expand row">
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr class="details-row">
+                    <td colspan="6">
+                      <div id="collapseExample3" class="collapse">
+                        <div class="collapse-content">
+                          <div class="container-fluid">
+                            <div class="errorDesc row">
+                              <div class="col-md-10 fieldReference">What was the expenditure for this core activity? <span class="warningMsg">This could be a problem. You should check it.</span></div>
+                              <div class="col-md-1">
+                                <a href="#!">
+                                  <div class="view text-right">View</div>
+                                </a>
+                              </div>
+                              <div class="col-md-1">
+                                <a href="#!">
+                                  <div class="allow text-right">Allow</div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="errorDesc row">
+                              <div class="col-md-10 fieldReference">Describe the core activity <span class="warningMsg">Are you sure about this? It seems odd.</span></div>
+                              <div class="col-md-1">
+                                <a href="#!">
+                                  <div class="view text-right">View</div>
+                                </a>
+                              </div>
+                              <div class="col-md-1">
+                                <a href="#!">
+                                  <div class="allow text-right">Allow</div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- buttons -->
+            <div class="mt-5 buttonGroup">
+              <button id="alert" class="btn btn-default">Button default</button>
+              <button class="btn btn-primary">Button primary</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+</body>
+
+</html>

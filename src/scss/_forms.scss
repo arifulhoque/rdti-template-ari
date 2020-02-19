@@ -1,0 +1,111 @@
+.form-control {
+    padding: 1rem;
+    height: calc(2em + 1.5em + 2px);
+    border-radius: 0;
+    border: 2px solid $grey;
+}
+
+.custom-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+// CUSTOM RADIO BUTTONS ----------------- //
+
+/* The custom-control */
+.custom-control-label {
+    position: relative;
+    align-items: center;
+    display: flex;
+    vertical-align: middle;
+    padding: 16px 32px;
+    border: 2px solid $darkGrey;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+    &:hover {
+        border-color: $primary;
+        &::before {
+            box-shadow: 0 0 0 2px $primary;
+        }
+    }
+    &::before {
+        position: relative;
+        top: 0px;
+        left: -1rem;
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        pointer-events: none;
+        content: '';
+        background-color: #fff;
+        box-shadow: 0 0 0 2px $darkGrey;
+        min-width: 1.5rem;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-sizing: border-box;
+    }
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        content: '';
+        background: no-repeat 50% / 50% 50%;
+        box-sizing: border-box;
+    }
+}
+
+.custom-control-input:checked ~ .custom-control-label::before, .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px $primary;
+    background: $primary;
+    box-sizing: border-box;
+}
+.custom-control-input:checked ~ .custom-control-label {
+    border-color: $primary;
+    color: $primary;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: none;
+    height: 0;
+    box-sizing: border-box;
+}
+.custom-control-inline {
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+    .custom-control-label {
+        min-width: 140px;
+        box-sizing: border-box;
+    }
+}
+
+.custom-radio {
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+.custom-control {
+    padding-left: 0;
+}
+
+// For currency input ---------
+
+.input-group-text {
+    background-color: $inputPrependGrey;
+    border: 2px solid $grey;
+    font-weight: 600;
+    color: $matteText;
+}
+
+.input-group > .input-group-prepend > .input-group-text {
+        border-right: 1px solid $grey;
+}
+
+.input-group > .input-group-append > .input-group-text {
+        border-left: 1px solid $grey;
+}

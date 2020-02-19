@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group" transform="translate(-7 -7)">
+    <path id="Compound_Path" data-name="Compound Path" d="M17,7A10,10,0,1,0,27,17,10,10,0,0,0,17,7Zm0,18.14A8.14,8.14,0,1,1,25.14,17,8.14,8.14,0,0,1,17,25.14Z" transform="translate(0 0)" fill="#4569a0"/>
+    <path id="Path" d="M37.116,32h-1.86v3.256H32v1.86h3.256v3.256h1.86V37.116h3.256v-1.86H37.116Z" transform="translate(-19.186 -19.186)" fill="#4569a0"/>
+  </g>
+</svg>
